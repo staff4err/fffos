@@ -21,3 +21,4 @@ jobs:
         with:
           name: furryFemboyOS-apk
           path: furryFemboyOS/app/build/outputs/apk/debug/app-debug.apk
+      - run: sed -i '/resumeWhilePaused/d' furryFemboyOS/app/src/main/AndroidManifest.xml
